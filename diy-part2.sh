@@ -10,6 +10,10 @@
 # See /LICENSE for more information.
 #
 
+rm -rf feeds/luci/applications/luci-app-alist
+rm -rf feeds/packages/net/alist
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/lang/golang
 sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
